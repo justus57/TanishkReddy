@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Reciept">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:text="Your order successfully completed"
+        android:textColor="#019710" />
+
+    <TextView
+        android:id="@+id/textViewname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textColor="#B20DED"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:text="Your Name:" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#B20DED"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:text="name"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true" />
+
+    <TextView
+        android:id="@+id/textViewaddress"
+        android:textColor="#B20DED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/textViewname"
+        android:layout_alignLeft="@+id/textViewname"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:text="Your Address:" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#B20DED"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Type your Address"
+        android:text="address"
+        />
+
+    <TextView
+        android:id="@+id/cityView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:textColor="#B20DED"
+        android:layout_alignStart="@+id/textViewaddress"
+        android:layout_alignLeft="@+id/textViewaddress"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:text="Your City:" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_alignStart="@+id/address"
+        android:layout_alignLeft="@+id/address"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="CITYID"
+        android:textColor="#B20DED" />
+
+    <TextView
+        android:id="@+id/postalCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#B20DED"
+        android:layout_below="@+id/cityView"
+        android:layout_alignStart="@+id/cityView"
+        android:layout_alignLeft="@+id/cityView"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:text="Your Postal Code:" />
+
+    <TextView
+        android:id="@+id/postalCodeid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city"
+        android:layout_alignStart="@+id/city"
+        android:layout_alignLeft="@+id/city"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:text="Postal Code"
+        android:textColor="#B20DED" />
+
+    <TextView
+        android:id="@+id/credit_card_numbertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postalCode"
+        android:layout_alignStart="@+id/postalCode"
+        android:layout_alignLeft="@+id/postalCode"
+        android:textColor="#B20DED"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:text="Your CreditCareNumber:" />
+
+    <TextView
+        android:id="@+id/creditCardNumberID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postalCodeid"
+        android:layout_alignStart="@+id/postalCodeid"
+        android:layout_alignLeft="@+id/postalCodeid"
+        android:layout_marginStart="0dp"
+        android:textColor="#B20DED"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:text="credit_card_number"
+        />
+    <TextView
+        android:id="@+id/CVV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/credit_card_numbertxt"
+        android:textColor="#B20DED"
+        android:layout_alignStart="@+id/credit_card_numbertxt"
+        android:layout_alignLeft="@+id/credit_card_numbertxt"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:text="Your CVV:" />
+
+    <TextView
+        android:id="@+id/CvvID"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creditCardNumberID"
+        android:layout_alignStart="@+id/creditCardNumberID"
+        android:layout_alignLeft="@+id/creditCardNumberID"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="cvvid"
+        android:textColor="#B20DED" />
+
+    <TextView
+        android:id="@+id/PhoneName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#B20DED"
+        android:layout_below="@+id/CVV"
+        android:layout_alignStart="@+id/CVV"
+        android:layout_alignLeft="@+id/CVV"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:text="Your PhoneName:" />
+
+    <TextView
+        android:id="@+id/PhoneNameID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CvvID"
+        android:layout_alignStart="@+id/CvvID"
+        android:layout_alignLeft="@+id/CvvID"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:text="PhoneNameID"
+        android:textColor="#B20DED" />
+
+    <TextView
+        android:id="@+id/PhoneModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PhoneName"
+        android:layout_alignStart="@+id/PhoneName"
+        android:layout_alignLeft="@+id/PhoneName"
+        android:textColor="#B20DED"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:text="Your Phone Model:" />
+
+    <TextView
+        android:id="@+id/PhoneModelID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PhoneNameID"
+        android:layout_alignStart="@+id/PhoneNameID"
+        android:layout_alignLeft="@+id/PhoneNameID"
+        android:layout_marginStart="0dp"
+        android:textColor="#B20DED"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:text="Phone PhoneModel ID"
+        />
+    <TextView
+        android:id="@+id/Phone_Color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PhoneModel"
+        android:layout_alignStart="@+id/PhoneModel"
+        android:layout_alignLeft="@+id/PhoneModel"
+        android:textColor="#B20DED"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:text="Your Phone Color  :" />
+
+    <TextView
+        android:id="@+id/Phone_ColorID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PhoneModelID"
+        android:layout_alignStart="@+id/PhoneModelID"
+        android:layout_alignLeft="@+id/PhoneModelID"
+        android:layout_marginStart="0dp"
+        android:textColor="#B20DED"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:text="Phone_Color iD"
+        />
+    <TextView
+        android:id="@+id/Phone_Storage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Phone_Color"
+        android:layout_alignStart="@+id/Phone_Color"
+        android:layout_alignLeft="@+id/Phone_Color"
+        android:textColor="#B20DED"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:text="Your Phone_Storage Id :" />
+
+    <TextView
+        android:id="@+id/Phone_StorageID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Phone_ColorID"
+        android:layout_alignStart="@+id/Phone_ColorID"
+        android:layout_alignLeft="@+id/Phone_ColorID"
+        android:layout_marginStart="0dp"
+        android:textColor="#B20DED"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:text="Phone_StorageId"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Group7_MAPD711_001_ASSIGNMET2</string>
+    <string name="welcome_to_Reddy_mobile_store">Welcome to Tanish Mobile Store</string>
+    <string-array name="SamsungModels">
+        <item>Galaxy S22</item>
+        <item>Galaxy S22 Ultra</item>
+        <item>Galaxy Z</item>
+    </string-array>
+    <string-array name="AppleModels">
+        <item>iPhone 14</item>
+        <item>iPhone 14 Max</item>
+        <item>iPhone 14 Pro</item>
+    </string-array>
+    <string-array name="GooglePixelModels">
+        <item>Google Pixel 6</item>
+        <item>Google Pixel 6 Pro</item>
+        <item>Google Pixel 6a</item>
+    </string-array>
+    <string-array name="OppoModels">
+        <item>Oppo Find X5</item>
+        <item>Oppo Find X5 Pro</item>
+        <item>Oppo Find X3</item>
+    </string-array>
+    <string name="submit_Button">Submit</string>
+    <string name="radiobutton3">256 GB</string>
+    <string name="radiobutton2">128 GB</string>
+    <string name="radiobutton1">64 GB</string>
+    <string-array name="colors">
+        <item>Blue</item>
+        <item>Black</item>
+        <item>Silver</item>
+        <item>Gold</item>
+    </string-array>
+</resources>
