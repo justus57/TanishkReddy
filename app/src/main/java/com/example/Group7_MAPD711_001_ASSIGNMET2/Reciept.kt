@@ -22,6 +22,7 @@ class Reciept : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reciept)
+
         name =  findViewById(R.id.name)
         address =findViewById(R.id.address)
         CvvID = findViewById(R.id.CvvID)
@@ -32,8 +33,10 @@ class Reciept : AppCompatActivity() {
         PhoneModelID = findViewById(R.id.PhoneModelID)
         Phone_ColorID =findViewById(R.id.Phone_ColorID)
         Phone_StorageID = findViewById(R.id.Phone_StorageID)
+
         val bundle = intent.extras
         if (bundle != null){
+
             // displays data from edit text
             name.text = " ${bundle.getString("name")}"
             address.text = "${bundle.getString("address")}"
